@@ -52,16 +52,47 @@
 
 # print (b_list)
 
-a_list = [3,1,4,1,5,9]
+# a_list = [3,1,4,1,5,9]
 
-target1  = int(input("enter the numbe ryou want to find:"))
-found = False 
+# target1  = int(input("enter the numbe ryou want to find:"))
+# found = False 
 
-for i in range(len(a_list)):
-    if a_list[i] == target1:
-        found = True
-        print (f"Found {target1} at index {i}")
-        break
+# for i in range(len(a_list)):
+#     if a_list[i] == target1:
+#         found = True
+#         print (f"Found {target1} at index {i}")
+#         break
 
-if not found:
-    print (f"{target1} not found")
+# if not found:
+#     print (f"{target1} not found")
+
+# a_list = [3,1,4,1,5,9]
+# a_list_sort()
+# print(a_list)
+# left = 0 
+# right = len (a_list) - 1
+
+
+word  = input("Enter the word: ")
+
+
+
+sum  = 0
+
+print (len(word))
+
+for i in range(len(word)):
+    
+    if word [i] == "a" or word[i] == "e" or word[i] == "i" or word[i] == "o" or word[i] == "u":
+        sum += 1
+        
+    elif word[i].isalpha():
+        sum+= 5
+        
+    else :
+        sum += 0
+
+print (sum)
+
+score  = sum * len(word)
+print(score)
